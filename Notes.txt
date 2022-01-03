@@ -1,0 +1,145 @@
+Networked | graph DBMS
+OO DBMS
+Distributed DBMS
+hierarchical DBMS
+*Relational DBMS(Tabular DBMS)
+NoSql
+
+-----------------------------------------------
+SQL is used only for RDBMS
+---------------------------------------------
+Example of RDBMS:
+----------------------
+1. MySQL
+2. MariaDB
+2. MS SQL Server
+3. Oracle
+4. PostGres
+5. SQLite
+6. H2
+7. DB2
+8. GuptaSQL
+---
+---
+Any SQL Command?
+-------------------
+SELECT * FROM <tableName>
+
+-----------------------------------------------------------------------------
+1. Display all the existing databases:
+----------------------------------------
+> show schemas; | show databases;
+
+2. Create a new database:
+----------------------------------------
+> create database <name_of_db>;
+
+3. change/switch database:
+----------------------------------------
+> use <name_of_db>;
+
+4. Display all the existing tables:
+----------------------------------------
+> show tables;
+
+5. How to create a table:
+------------------------------
+> CREATE TABLE <table_name> (id INTEGER, name VARCHAR(20), age INTEGER, salary DOUBLE(5,2));
+
+6. How to see description/structure of a table.
+------------------------------------------------
+> DESC <table_name>
+
+7. How to display/get the database
+---------------------------------------
+> SELECT * FROM <table_name>
+
+8. How to insert data into the table:
+--------------------------------------------
+> INSERT INTO employee VALUES(1, 'shadab', 35, 1234.5);
+
+> INSERT INTO employee (name, age, salary) VALUES( 'shadab', 35, 1234.5);
+
+8. How to update data into the table:
+--------------------------------------------
+> UPDATE <table_name> SET col1=val1, col2=val2, ..... WHERE col=val ;
+
+> UPDATE employee SET age=32, name='shadab K', salary='2233' WHERE id=1 ;
+
+9. Delete data from the table:
+------------------------------
+> DELETE FROM <table_name> WHERE id =1;
+
+10. DROP command:
+----------------------
+> DROP TABLE <table_name>;
+
+> DROP DATABASE <db_name>;
+
+------------------------------
+11. ALter table:
+-------------------------
+ALTER TABLE <table_name> ADD <column_name> <datatype>; 
+
+ALTER TABLE employee ADD phone VARCHAR(13); 
+
+
+
+INSERT INTO employee VALUES(1, 'shadab', 32, 1234.5, '7007586179');
+INSERT INTO employee VALUES(2, 'Lala', 33, 9999, '1234567890');
+INSERT INTO employee VALUES(3, 'Arif', 29, 11001,'9876543210');
+INSERT INTO employee VALUES(4, 'Sharma Ji', 31, 20000,'99887766');
+
+SELECT * FROM employee WHERE NAME='Lala' AND age=34;
+
+SELECT * FROM employee WHERE age BETWEEN 30 AND 40;
+
+SELECT * FROM employee WHERE NAME='Lala' AND age=34;
+
+SELECT * FROM employee WHERE age BETWEEN 30 AND 40;
+
+SELECT * FROM employee WHERE age != 32;
+SELECT * FROM employee WHERE age <> 32 AND age <> 29;
+
+
+SELECT * FROM employee ORDER BY salary DESC;
+
+SELECT * FROM employee ORDER BY salary DESC;
+
+SELECT * FROM employee WHERE NAME LIKE '%dab';
+
+SELECT * FROM employee WHERE age IN (30,31,32,33,34,35);
+
+SELECT * FROM employee WHERE age > 30;
+
+
+SQL JOIN?
+----------------
+What are SQL joins?
+Why we need it?
+What are different types of SQL join supported by MySQL?
+example for each type of joins?
+
+Just take 2 tables -> A and B
+
+
+INSERT INTO customers VALUES (1, 'PoojaShree',	'Pooja',	'Germany');
+INSERT INTO customers VALUES (2, 'Samparan',	'sam',	'India');
+INSERT INTO customers VALUES (3, 'Nikita',	'Niki',	'USA');
+INSERT INTO customers VALUES (4, 'PoojaShree',	'Pooja', 'France');
+
+--------------------------------------------------------------------------
+INSERT INTO orders VALUES (10308,	2,	'1996-09-18');
+INSERT INTO orders VALUES (10309,	37,	'1996-09-19');
+INSERT INTO orders VALUES (10310,	77,	'1996-09-20');
+
+
+
+
+
+
+
+
+
+
+
